@@ -50,12 +50,12 @@ private boolean play=true;
         
         map.draw((Graphics2D) g);
         
-        //g.setColor(Color.yellow); //color of border
+        g.setColor(Color.BLACK); //color of border
         g.fillRect(0,0,3,592);
         g.fillRect(0,0,692,3);
         g.fillRect(691,0,3,592);
         
-        g.setColor(Color.BLACK);  //color of the font come when we exit or lose the game
+        g.setColor(Color.DARK_GRAY);  //color of the font come on the top of the game score
         g.setFont(new Font("MV Boli" ,Font.BOLD,25));
         g.drawString("Score: " + score ,520,30); //position of the score to display
         
