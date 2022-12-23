@@ -15,9 +15,9 @@ public class BrickBreakerGame {
     public static void main(String[] args){
         JFrame obj = new JFrame();
         GamePlay gameplay=new GamePlay(); 
-        obj.setBounds(10,10,1000,800);
-        obj.setTitle("BrickBreaker");  
-        obj.setLocationRelativeTo(null);   
+        obj.setBounds(10,10,1000,800); //bounds of the frame
+        obj.setTitle("BrickBreaker");       //title of game
+        obj.setLocationRelativeTo(null);   //
         obj.setResizable(false);  
         obj.setVisible(true);
         obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
