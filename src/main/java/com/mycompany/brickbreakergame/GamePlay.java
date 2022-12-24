@@ -32,6 +32,7 @@ private boolean play=true;
     private int ballposY=350;
     private int ballXdir=-1;
     private int ballYdir=-2;
+    double speed=1; 
     
     private MapGenerator map;
     
@@ -42,6 +43,7 @@ private boolean play=true;
         setFocusTraversalKeysEnabled(false);
         timer=new Timer(delay,this);
         timer.start();
+        
     }
     public void paint(Graphics g){
         
@@ -80,8 +82,10 @@ private boolean play=true;
             ballXdir=0;
             ballYdir=0;
             g.setColor(new Color(0XFF6464));
-            g.setFont(new Font("MV Boli",Font.BOLD,30));
-            g.drawString("YOU WON,SCORE:" + score,190,300);
+            g.setFont(new Font("MV Boli",Font.BOLD,20));
+            g.drawString("Congratulations!! YOU WON" , 190,300);
+            g.setFont(new Font("MV Boli" , Font.BOLD,20));
+            g.drawString("Score: " + score , 330,550);
             
             g.setFont(new Font("MV Boli",Font.BOLD,20));
             g.drawString("Press Enter to Restart",230,250);
